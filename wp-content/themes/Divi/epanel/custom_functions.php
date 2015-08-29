@@ -45,7 +45,7 @@ if ( ! function_exists( 'et_options_stored_in_one_row' ) ){
  * @return mixed Theme option value or false if not found.
  */
 if ( ! function_exists( 'et_get_option' ) ){
-	function et_get_option( $option_name, $default_value = '', $used_for_object = '' ){
+	function et_get_option( $option_name, $default_value = '', $used_for_object = '', $force_default_value = false ){
 		global $et_theme_options, $shortname;
 
 		if ( et_options_stored_in_one_row() ){
@@ -58,7 +58,7 @@ if ( ! function_exists( 'et_get_option' ) ){
 		}
 
 		// option value might be equal to false, so check if the option is not set in the database
-		if ( ! isset ( $et_theme_options[$option_name] ) && '' != $default_value ) {
+		if ( ! isset( $et_theme_options[ $option_name ] ) && ( '' != $default_value || $force_default_value ) ) {
 			$option_value = $default_value;
 		}
 
