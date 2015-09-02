@@ -11,3 +11,25 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 @import url("../Divi/style.css");
 /*------------------------------------------------*/
+body {
+  font-family: 'Arimo', sans-serif;
+}
+.container, .et_pb_row {
+  max-width: 990px;
+}
+
+#footer-bottom {
+    background-color: #f7f5f5;
+}
+#main-footer {
+    background-color: #1c71b8;
+    color:#FFF;
+}
+.footer-widget h4 {
+    color:#FFF;
+    font-weight:600;
+}
+
+.et_pb_gutters3.et_pb_footer_columns4 .footer-widget {
+  width:27%;
+}
