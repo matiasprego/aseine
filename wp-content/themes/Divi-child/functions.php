@@ -1,6 +1,4 @@
 <?php
-
-<?php
 /**
  * Hook in on activation
  */
@@ -36,4 +34,3 @@ function yourtheme_woocommerce_image_dimensions() {
 
 add_action( 'after_switch_theme', 'yourtheme_woocommerce_image_dimensions', 1 );
 
-?>
