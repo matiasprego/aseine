@@ -33,3 +33,21 @@ body {
 .et_pb_gutters3.et_pb_footer_columns4 .footer-widget {
   width:27%;
 }
+
+
+/***** PRoduct ***/
+#product-sidebar {
+  width:245px;
+  float:left;
+  border: 1px solid #dddddd;
+}
+#product-sidebar h3 {
+  border-bottom: 1px solid #dddddd;
+  color:#2cb1e9;
+  padding:16px;
+  font-size:17px;
+}
+#product-sidebar .product-attributes {
+  padding:20px;
+  border-bottom: 1px solid #dddddd;
+}
