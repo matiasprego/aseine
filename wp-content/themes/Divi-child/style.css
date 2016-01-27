@@ -34,6 +34,51 @@ body {
   width:27%;
 }
 
+/*****/
+.bread-back {
+background-color:#2cb1e9;
+padding:20px 0px;
+margin-bottom:50px;
+}
+.woocommerce .bread-back .woocommerce-breadcrumb {
+background:none;
+padding-top:0;
+padding-botttom:0;
+margin-bottom:0;
+}
+.woocommerce .bread-back .woocommerce-breadcrumb a {
+color:#FFF;
+font-weight:400;
+}
+.woocommerce .bread-back .woocommerce-breadcrumb {
+color:#FFF;
+font-weight:600;
+font-size:17px;
+}
+.back-grey {
+  background:#f7f5f5;
+}
+.center-header {
+  width:992px;
+  margin:auto;
+  height:236px;
+}
+
+.product-categories {
+  font-size:16px;
+}
+.cat-parent {
+  border: 1px solid #dddddd;
+}
+
+.et_pb_widget ul li ul li.cat-item {
+  border-top: 1px solid #dddddd;
+  margin-left: 0px;
+  padding-left: 15px;
+}
+.single.woocommerce #main-content {
+padding-bottom:50px;
+}
 
 /***** PRoduct ***/
 #product-sidebar {
@@ -50,4 +95,29 @@ body {
 #product-sidebar .product-attributes {
   padding:20px;
   border-bottom: 1px solid #dddddd;
+}
+.single-product #main-content .container {padding-top:0;}
+.woocommerce div.product div.images { width:245px; }
+.woocommerce-page div.product div.summary { width:710px; }
+
+.product-categories li a { padding:8px 0px 8px 20px; font-size:16px; display:block;}
+.et_pb_widget ul.product-categories li {margin-bottom:0;}
+.et_pb_widget ul.product-categories li.cat-parent {margin-bottom:10px;}
+
+.woocommerce .woocommerce-breadcrumb { background:#f7f5f5; padding-left:20px; padding-top:8px; padding-bottom:8px; }
+
+div#tab-description {padding:0;}
+body.woocommerce div.product .woocommerce-tabs .panel, body.woocommerce #content-area div.product .woocommerce-tabs .panel {padding:0; }
+
+body.woocommerce .woocommerce-tabs { border:0; margin-top:20px; }
+ul.tabs.wc-tabs, .et-cart-info, #et_search_icon {display:none;}
+
+@media only screen and (min-width: 981px) {
+.et_left_sidebar #main-content .container:before, .et_right_sidebar #main-content .container:before {display:none;}
+.et_left_sidebar #sidebar {padding-right:0;}
+#sidebar { width:26%; }
+#left-area {width:73%; padding-left:2%;}
+.et_left_sidebar #left-area {padding-left:2%;}
+.et_right_sidebar #left-area {float:right; padding-right:0;}
+.et_right_sidebar #sidebar {float:left; padding-left:0; }
 }

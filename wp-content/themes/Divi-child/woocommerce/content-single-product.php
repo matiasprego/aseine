@@ -13,6 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
+global $product;
 ?>
 
 <?php
@@ -47,12 +48,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 			/**
 			 * woocommerce_single_product_summary hook
 			 *
-			 * @hooked woocommerce_template_single_title - 5
-			 * @hooked woocommerce_template_single_rating - 10
-			 * @hooked woocommerce_template_single_price - 10
-			 * @hooked woocommerce_template_single_excerpt - 20
-			 * @hooked woocommerce_template_single_add_to_cart - 30
-			 * @hooked woocommerce_template_single_meta - 40
+			 * @hooked woocommerce_template_single_meta - 5
+			 * @hooked woocommerce_template_single_title - 10
+			 * @hooked woocommerce_template_single_rating - 20
+			 * @hooked woocommerce_template_single_price - 20
+			 * @hooked woocommerce_template_single_excerpt - 30
+			 * @hooked woocommerce_template_single_add_to_cart - 40
 			 * @hooked woocommerce_template_single_sharing - 50
 			 */
 			do_action( 'woocommerce_single_product_summary' );
@@ -69,13 +70,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 		 * @hooked woocommerce_output_related_products - 20
 		 */
 		do_action( 'woocommerce_after_single_product_summary' );
+
+
 	?>
+
 	<div id="product-sidebar">
 		<h3>Composición</h3>
 		<div class="product-attributes">
+			<img src="<?php echo z_taxonomy_image_url(34); ?>">
+			<div class="pa-text"><?php echo $product->get_attribute('pa_composicion'); ?></div>
 		</div>
 		<h3>Propiedades</h3>
 		<div class="product-attributes">
+			<?php echo $product->get_attribute('pa_propiedades'); ?>
 		</div>
 	</div>
 

